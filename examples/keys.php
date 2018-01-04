@@ -11,7 +11,10 @@
 */
 
 <?php
-require_once 'path/to/block_io.php';
+
+use BlockIo\BlockIo;
+
+require_once '../vendor/autoload.php';
 
 /* Replace the $apiKey with the API Key from your Block.io Wallet. */
 $apiKey = 'YOUR API KEY';
@@ -26,5 +29,3 @@ $key = $block_io->initKey()->fromPassphrase($passphrase);
 
 echo "Current Network: " . $network . "\n";
 echo "Private Key: " . $key->toWif($network) . "\n"; // print out the private key for the given network
-
-?>

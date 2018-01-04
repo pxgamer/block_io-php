@@ -17,7 +17,10 @@
 */
 
 <?php
-require_once '../lib/block_io.php';
+
+use BlockIo\BlockIo;
+
+require_once '../vendor/autoload.php';
 
 /* Parse command line arguments */
 parse_str(implode('&', array_slice($argv, 1)), $_GET);
@@ -70,5 +73,3 @@ while (true) {
       }
 	    
 }
-
-?>

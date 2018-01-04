@@ -7,7 +7,10 @@
 */
 
 <?php
-require_once '/home/anazir/blockio-libs/php/lib/block_io.php';
+
+use BlockIo\BlockIo;
+
+require_once '../vendor/autoload.php';
 
 $apiKey = 'YOUR API KEY';
 $pin = 'NONE'; // Not Needed
@@ -33,5 +36,3 @@ try {
 } catch (Exception $e) {
    echo $e->getMessage() . "\n";
 }
-
-?>

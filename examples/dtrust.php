@@ -11,7 +11,10 @@
 */
 
 <?php
-require_once '/path/to/block_io.php';
+
+use BlockIo\BlockIo;
+
+require_once '../vendor/autoload.php';
 
 /* Replace the $apiKey with the API Key from your Block.io Wallet. A different API key exists for Dogecoin, Dogecoin Testnet, Litecoin, Litecoin Testnet, etc. */
 $apiKey = 'DogecoinTestnetAPIKey';
@@ -123,5 +126,3 @@ try {
 } catch (Exception $e) {
     echo "Exception: " . $e->getMessage() . "\n";
 }
-
-?>
