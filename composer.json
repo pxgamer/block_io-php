@@ -19,6 +19,9 @@
     "autoload": {
         "psr-4": {
             "BlockIo\\": "lib"
-        }
+        },
+        "files": [
+            "lib/helpers/functions.php"
+        ]
     }
 }
